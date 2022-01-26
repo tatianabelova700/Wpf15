@@ -1,0 +1,115 @@
+﻿<Window x:Class="WpfApp15_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp15_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer>
+
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/cat.jpg"/>
+                            <BlockUIContainer.ToolTip>
+                                Изображение кошек
+                            </BlockUIContainer.ToolTip>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0">
+                        <Hyperlink.ToolTip>
+                            https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0
+                        </Hyperlink.ToolTip>
+                        Кошка
+                    </Hyperlink>
+                </Paragraph>
+                <Paragraph xml:space="preserve">    <Bold>Кошка</Bold> - (лат. <Italic>Felis catus</Italic>) домашнее животное, одно из наиболее популярных (наряду с собакой) «животных-компаньонов»
+                </Paragraph>
+                <Paragraph>
+                    <Span Background="#FFFFE0E5">Синонимы:</Span>
+                </Paragraph>
+                <List MarkerStyle="Box">
+                        <ListItem>
+                            <Paragraph>
+                            <Italic>Felis silvestris catus</Italic> (Linnaeus, 1758)
+                        </Paragraph>                           
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                            <Italic>Felis catus domestica</Italic> (Erxleben, 1777)
+                        </Paragraph>                           
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                            <Italic>Felis domestica</Italic> Erxleben, 1777
+                        </Paragraph>                           
+                        </ListItem>            
+                    </List>
+
+                <Paragraph xml:space="preserve">
+    С точки зрения научной систематики, <Bold>домашняя кошка</Bold> — млекопитающее семейства кошачьих отряда хищных. Нередко домашнюю кошку рассматривают как подвид лесной кошки <Italic>(Felis silvestris) — Felis s. catus</Italic>, однако, с точки зрения современной биологической систематики (2017 год), домашняя кошка является отдельным биологическим видом.
+                </Paragraph>
+                <Paragraph xml:space="preserve">    Являясь одиночным охотником на грызунов и других мелких животных, кошка — социальное животное, использующее для общения широкий диапазон звуковых сигналов, а также феромоны и движения тела. В настоящее время в мире насчитывается около 600 млн домашних кошек, выведено около 200 пород, от длинношёрстных (персидская кошка) до лишённых шерсти (сфинксы), признанных и зарегистрированных различными фелинологическими организациями. На протяжении 10 000 лет кошки ценятся человеком, в том числе за способность охотиться на грызунов и других домашних вредителей
+                </Paragraph>
+                
+                <Paragraph>
+                    Нормальные физиологические показатели
+                </Paragraph>
+                <Table>
+                    <TableRowGroup >
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Температура тела
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    +38,6 °C
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Частота сердечных сокращений
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    110—140 ударов в минуту
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Частота дыхания
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    16—40 вдохов в минуту
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                </Table>
+                
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
